@@ -1,13 +1,13 @@
 {
-    "type": "service_account",
-    "project_id": "metal-summer-269312",
-    "private_key_id": "7999f58ca2ec3456967e7aca1a687f0469515f76",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQC9/I9faLZF50uU\nk080KiD0XNcrVJPLEKEtZxSl2nh4Z9L3yY3MIyOIm5aZh4lY0ZBr9F9+S2zCsshI\nysQQsOK1Z2V1W7+dGcRblFiLkannub7yfOKrWfwEPV0xfqhR+4cu7veiYUy7Hccz\nikYU5Dqm8t+c0dwFnm+lMbdLCCDhW+0Javk9O1qSy/S9Ild1YT5C/JkSpZYndozP\nsZpwYHq/YteyLuTEf5VSvl1BOtAUpz58BJ88ev3njpuKvYIhhrgMUyuRmTGI017t\n+XZ7DtQ827d7xeEa4NWq2VJt0rbJTq9190dwH0etLS5I2r1XNL/tRTo2BRbH9g5b\nh6DM8yPRAgMBAAECggEAIln663ehs3B/hjj/cnFmnYB26E8F3Qrf9bdkcJuYuj6d\nku+G28EDwQTO3Wo4D47uw9I+/PUy0F5mn+DHxDPTfhTYr7hb5FI/IobnXq8DD1LS\nv4IMswpVasfUpKkf0pj956LONDZPGysmdD99bfQZVcvm2jJIy9xKmA4t89tfpJd8\nVULWAvJ4hq9mx9UcIccrraYXH5Jo7uoOoibfR0H7w9iuQaov1QVTufNP/HpRIG+/\n46bNcKA4GLyoPKQ5WpTlSyGnS/O200ihAvv14XkuIzWMmQiqlPwodg0C0+4P0wT3\nr7lRFaZ2rw1hkZo3CqtoZey3TH+Pa+UPzRgnWxWjxQKBgQDqaV6spo6P6qmAueOC\n6Tb2/B3z7l9YBWauurSDK9W0aNk7MyxU4HljGGv9GOwbqYWio0GIAnXjzp5xyIF7\np2CQiyhyJjjYNTbE3Kl5ecIR4f3qC13fx34f2Wi8R8FIHZpZWpTeDQhNJtyMm6WQ\nF6p0TOXAmi78NquJ1/FHmi1s/QKBgQDPe8xuryGBxHmXzL3H0ePv8n7bzoMJKKrl\nRCIrg1xBfSv5Ac/G5R3+LZ4t7t36pwfUD+FOntNLftqoNdZhHsaQwgGsVKS8Op9a\n9z4dMjsv/yz8Fdp/YXzaHmz3EJR/TGt6d60JEo9439Q77ENfbPPbDXFdE4TrFrS2\nYhHm3Z70ZQJ/NRuqV3Nk2TZRMNjssrwjt9Fm990JvOd8XBnwy8cio70dekwdvx0c\nY1clIDKFS78ch7x1HFtyWip1u1GyBFHnjtf4UeRW/KURw4g63Uq4rVSGMoBgxFJu\nQMkA8adQIwaR8ayUDbrmJpSnYzPgTsUN2UuSwhAslPfN5W0HPTGxGQKBgAzEoIr7\nKgOzVIw75D3ks7MzaA0cw0GQCBw9uiCVX9sD2e3j56ZkuRjIM+C9v1lKaBfrtkDB\nU11k/A236m5ll3CXD8VMHCsdLGtLpb3kNnI4sMr+iUindihyEOCPW6QNzttle/d/\n9eZJV+UsH+VCbis/w4cnyVkyN4K1vEZJwxtlAoGAPcQr0vVorpZAIco9BYE4NWoQ\nzMHAWcZIHOAaMqxPf282TFRNOmw5Yi7pnCOYPDVSVz5c7w+50o6HAuFFAudI3Z5k\nyvyPbb7hJ4djyZ836IwRanhkXwU3zhwtMO/lX9kogu42sOmucu+CVUDqRGuu0otC\nIa6HWU5AIeKKnsuY/vE=\n-----END PRIVATE KEY-----\n",
-    "client_email": "task-294@metal-summer-269312.iam.gserviceaccount.com",
-    "client_id": "100471638623192395374",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/task-294%40metal-summer-269312.iam.gserviceaccount.com"
+    "type": "type",
+    "project_id": "id",
+    "private_key_id": "key",
+    "private_key": "private_key",
+    "client_email": "mail",
+    "client_id": "id",
+    "auth_uri": "uri",
+    "token_uri": "uri",
+    "auth_provider_x509_cert_url": "cert",
+    "client_x509_cert_url": "url"
 }
   
