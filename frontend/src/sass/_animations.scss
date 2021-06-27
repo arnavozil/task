@@ -1,0 +1,308 @@
+@keyframes shimmer {
+    0% {
+      background-position: -100rem 0;
+    }
+    100% {
+      background-position: 100rem 0;
+    }
+}
+
+
+@keyframes shrink {
+	0%{
+		transform: none;
+	}
+	100%{
+		transform: translateX(200%);
+	}
+}
+
+@keyframes expand {
+	0%{
+		transform: translateX(200%);
+	}
+	100%{
+		transform: none;
+	}
+}
+
+
+@keyframes move-blind {
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes move-pullie {
+    100% {
+        top: 18px;
+        opacity: 1;
+    }
+}
+
+@keyframes move-pullie-alt {
+    100% {
+        top: 12px;
+        opacity: 1;
+    }
+}
+
+@keyframes riseLabel{
+    0%{
+        transform: translate(0, 100%);
+        font-size: 2rem;
+    }
+    100%{
+        transform: translate(0, -50%);
+        font-size: 1.25rem;
+    }
+}
+
+@keyframes riseLabelSmall{
+  0%{
+      transform: translate(0, 50%);
+      font-size: 2rem;
+  }
+  100%{
+      transform: translate(0, -40%);
+      font-size: 1.25rem;
+  }
+}
+
+@keyframes heartBeat {
+    0% {
+      transform: scale(1);
+    }
+  
+    14% {
+      transform: scale(1.3);
+    }
+  
+    28% {
+      transform: scale(1);
+    }
+  
+    42% {
+      transform: scale(1.3);
+    }
+  
+    70% {
+      transform: scale(1);
+    }
+}
+
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(120%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(120%, 0, 0);
+  }
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+}
+
+@keyframes zoomEl{
+  from{
+    transform: scale(.4);
+  }
+
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn{
+  from{
+    display: block;
+    transform: scale(1);
+    filter: blur(2rem);
+    opacity: .8;
+  }
+
+  to{
+    filter: blur(0);
+    display: block;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottom{
+  from{
+    transform: translate(0, 50%);
+  }
+  to{
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes dotCollisionBefore {
+  0%,
+  50%,
+  75%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes dotCollisionAfter {
+  0%,
+  50%,
+  75%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes loading-font {
+	0% {
+    text-indent: calc(-50% - 5px);
+  }
+  100% {
+    text-indent: calc(150% - 10px);
+  }
+}
+
+@keyframes loading-opacity {
+	0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loading {
+	0% {
+    background-position: -50% 0px;
+  }
+  100% {
+    background-position: 150% 0px;
+  }
+}
+
+@keyframes wave {
+	0%, 60%, 100% {
+		transform: initial;
+	}
+
+	30% {
+		transform: translateY(-15px);
+	}
+}
+
+@keyframes pulse {
+  from {
+    background: #eef;
+    transform: scale3d(1, 1, 1);
+    
+  }
+
+  50% {
+    background: rgba(springgreen, .6);
+    transform: scale3d(1.001, 1.001, 1.001);
+  }
+
+  to {
+    background: #eef;
+    transform: scale3d(1, 1, 1);
+  }
+}

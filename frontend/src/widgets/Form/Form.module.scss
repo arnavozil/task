@@ -1,0 +1,74 @@
+@import "../../sass/variables";
+
+.form{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    &_heading{
+        margin-left: 2rem;
+    }
+
+    &_button{
+        width: 42.5%;
+        height: fit-content;
+        display: flex;
+        margin: 1rem auto;
+        margin-right: 1rem;
+        position: relative;
+        justify-content: flex-end;
+    
+        &_loading{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &_main{
+        width: 100%;
+        display: grid;
+    
+        &_input{
+            padding: 1rem;
+        }
+    
+        &_button{
+            background: $primary;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 900;
+            border-radius: .25rem;
+            // font-family: "PT Sans", sans-serif;
+            height: 4.75rem;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border: .1rem solid darken($border, 5%);
+            font-size: 2rem;
+            transition: all .25s ease-in;
+
+            &:hover{
+                background: #ddf;
+                color: #114;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+        }
+    }
+}
+
+.inactive{
+    border-color: $gray;
+    cursor: not-allowed;
+    background: $gray;
+
+    &:hover{
+        background: $gray;
+        color: #fff;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,14 @@
+.main{
+    // position: relative;
+
+    &_close{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        color: #f04;
+        border-left: .35rem solid #f04;
+        border-bottom: .35rem solid #f04;
+        font-size: 3.5rem;
+    }
+}

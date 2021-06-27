@@ -1,0 +1,7 @@
+{
+    "localFrontend": "LOCAL_URL",
+    "prodFrontend": "PRODUCTION_URL",
+    "secret": "SALT",
+    "testDatabase": "TEST_DATABASE_URI",
+    "prodDatabase": "PRODUCTION_DATABASE_URI"
+}

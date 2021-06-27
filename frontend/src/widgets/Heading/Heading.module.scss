@@ -1,0 +1,60 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.main{
+    font-weight: 100;
+    color: #114;
+    font-weight: 800;
+    font-size: 3rem;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::after{
+        width: 8rem;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.75rem;
+        height: .5rem;
+        background: $primary;
+    
+        @include respond(tab-port){
+            bottom: -.2rem;
+            height: .4rem;
+        }
+    }
+
+    @include respond(tab-port){
+        font-size: 2.75rem;
+        margin: 1rem 0;
+        line-height: 4rem;
+    }
+}
+
+.link{
+    flex-direction: row;
+    width: clamp(100%, 100%, 100%);
+    font-weight: 700;
+
+    &_name{
+        font-family: "PT Sans", sans-serif;
+        color: #555;
+        font-weight: 900;
+        font-size: 1.25rem;
+        text-decoration-line: underline;
+        text-transform: capitalize;
+    }
+
+    @include respond(tab-port){
+        display: flex;
+    }
+}
+
+.after{
+    margin-right: .2rem;
+    &::after{
+        content: ' > ';
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../sass/variables";
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: $primary;
+
+    &_image{
+        position: absolute;
+        height: 50vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

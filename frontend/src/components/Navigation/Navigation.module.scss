@@ -1,0 +1,45 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.main{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 9vh;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    padding: 0 5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @include respond(tab-port){
+        padding: 0 1rem;   
+    }
+
+    &_logo{
+        position: absolute;
+        left: 5rem;
+        top: 50%;
+        height: 150%;
+        transform: translate(0, -50%);
+    
+        @include respond(tab-port){
+            left: 0;
+        }
+    }
+
+    &_right{
+        
+        & > a, span{
+            color: $purple;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+    }
+}

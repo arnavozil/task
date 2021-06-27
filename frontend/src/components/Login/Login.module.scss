@@ -1,0 +1,17 @@
+@import "../../sass/mixins";
+
+.main{
+    height: 80vh;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port){
+        width: 100%;    
+    }
+}

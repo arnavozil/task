@@ -1,0 +1,12 @@
+.main{
+    left: 1rem;
+    top: 0;
+    position: absolute;
+    width: calc(100% - 2rem);
+    background: #f04;
+    border-radius: .25rem;
+    color: white;
+    font-weight: 300;
+    padding: .75rem;
+    transform: translate(0, -100%);
+}

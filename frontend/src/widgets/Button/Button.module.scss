@@ -1,0 +1,83 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+@mixin common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $border;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: .25rem;
+    height: 4.75rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid rgba($border, .1);
+    font-size: 2rem;
+    transition: all .25s ease-in;
+}
+
+.primarybutton{
+    @include common;
+    background: $primary;
+    color: white;
+
+    
+
+    &:hover{
+        background: #ddf;
+        color: #114;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    @include respond(tab-port){
+        height: 4.5rem;
+        font-size: 1.4rem       
+    }
+};
+
+.secondarybutton{
+    @include common;
+    background: transparent;
+    color: $crimson;
+    border: $crimson solid .1rem;
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+    // padding: 0 2rem;
+    margin-top: .25rem;
+    width: 100%;
+    justify-content: space-between;
+
+    @include respond(tab-port){
+        display: grid;
+        grid-gap: .5%;
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    &_item{
+        cursor: pointer;
+        width: 13.5%;
+        border-radius: .2rem;
+        height: 3.5rem;
+        display: flex;
+        transition: all .25s ease;
+        justify-content: center;
+        align-items: center;
+        border: .2rem solid #aaaaff55;
+    
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+}
+
+.selected{
+    border-color: $border;
+    background: $primary;
+    color: white !important;
+}

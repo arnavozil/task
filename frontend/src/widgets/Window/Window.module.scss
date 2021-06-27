@@ -1,0 +1,158 @@
+@import "../../components/Executive/Login/Login.module.scss";
+@import "../../sass/variables";
+
+.card{
+    max-width: 58vw;
+    width: 100%;
+    position: relative;
+    height: 87.25vh;
+    padding-top: 0;
+    margin-top: .4rem;
+    display: flex;
+    justify-content: flex-start;
+    background: #efffff;
+
+    &_heading{
+        cursor: pointer;
+        margin: 0;
+        width: calc(100% + 2rem);
+        background-color: #ddd;
+        padding: 1rem;
+        font-size: 2rem;
+        border-bottom: .2rem solid #ccc;
+        font-weight: 500;
+     
+        &::after{
+            display: none;
+        }
+    }
+
+    &_end{
+        right: 0;
+        top: 0;
+        position: absolute;
+        width: fit-content;
+        padding: 0 3rem;
+        background: #f04;
+        transform: translate(105%, 0);
+    
+        bottom: 0;
+        right: unset;
+        left: 0;
+        z-index: 1;
+        transform: translate(0, 110%);
+        top: unset;
+        width: 100%;
+    }
+
+    &_scroll{
+        height: 82%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+ 
+        &_container{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: .5rem;
+            padding-right: 1rem;
+            margin-bottom: 0 !important;
+        }
+
+        &_item{
+            display: flex;
+            max-width: 80%;
+            margin-bottom: 0;
+            background-color: #fef;
+            width: fit-content;
+            border: .1rem solid #eee;
+            box-shadow: rgba(99, 99, 99, 0.1) 1px 1px 1px 0px;
+            height: fit-content;
+            padding: .75rem .75rem;
+            border-radius: .4rem;
+            flex-direction: column;
+            background: darken($border, 35%);
+
+            &_top{
+                display: flex;
+                margin-bottom: .25rem;
+                flex-direction: row-reverse;
+                align-items: flex-end;
+
+                &_name{
+                    text-transform: capitalize;
+                    font-size: 1.6rem;
+                    color: #fff;
+                }
+            }
+
+            &_text{
+                font-family: "Lato", "PT Sans", "Raleway", sans-serif;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #eee;
+            }
+
+            &_time{
+                font-size: 1rem;
+                color: #bbb;
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    &_input{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: fit-content;
+        width: 100%;
+        & > input{
+            border-radius: 0;
+            height: fit-content;
+            font-weight: 300;
+            // overflow: hidden;
+            overflow-y: scroll;
+            padding-right: 20%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-top: .1rem solid rgba(#113, .26);
+        }
+
+        &_button{
+            position: absolute;
+            width: 15%;
+            top: 50%;
+            transform: translate(0, -52%);
+            right: .5rem;
+            height: calc(100% - 1rem);
+        
+            &_key{
+                margin-left: 1rem;
+                font-size: 1.2rem;
+                color: #eee;
+                margin-bottom: .25rem;
+                background-color: #777;
+                padding: .5rem 1rem;
+                border-radius: .5rem;
+                // font-family: "Raleway", sans-serif;
+                // font-weight: 500;
+                box-shadow: rgba(0, 0, 0, 0.45) 3px 3px .1px;
+                // text-transform: capitalize !important;
+            }
+        }
+    }
+}
+
+.request{
+    position: absolute;
+    width: 95%;
+    color: white;
+    font-weight: 400;
+    height: fit-content;
+    background: linear-gradient(to left, #f90, #f50);
+    font-size: 1.8rem;
+    padding: 1rem;
+    bottom: 8rem;
+    border-radius: .25rem;   
+}

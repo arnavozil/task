@@ -1,0 +1,52 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.main{
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto 1rem auto;
+    font-family: "PT Sans", sans-serif;
+
+    @include respond(tab-port){
+        display: flex;   
+    }
+
+    &_tab{
+        flex: 1;
+        text-align: center;
+        color: $border;
+        padding: .5rem;
+        font-size: 1.25rem;
+        border: none;
+        border-bottom: .2rem solid $border;
+        border-left: .2rem solid $border;
+        // position: relative
+        overflow: hidden;
+        background-color: rgba($border, .025);
+        cursor: pointer;
+        transition: all .25s ease-in;
+
+        &:nth-child(1){
+            border-left: none;
+            position: relative;
+            border-right: .2rem solid $border;
+        }
+
+        &_badge{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #f04;
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import "../../sass/variables";
+
+.main{
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    border-radius: .15rem;
+    background-color: #ccc;
+
+    &_back{
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+}
+
+.heading{
+    font-size: 1.5rem !important;
+    margin: .25rem 0;
+    margin-bottom: 1rem;
+    text-shadow: none !important;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.1rem;
+    height: fit-content;
+    font-family: "PT Sans", sans-serif;
+    justify-content: space-between;
+}
+
+.a{
+    background: $primary;
+    border-radius: .15rem 0 0 .15rem;
+}
+
+.b{
+    background: #2AFC98;
+    border-radius: 0 .15rem .15rem 0;
+}

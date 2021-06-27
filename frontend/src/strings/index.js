@@ -1,0 +1,1 @@
+export const IMAGE_URL = 'https://storage.googleapis.com/task-bucket1/';
